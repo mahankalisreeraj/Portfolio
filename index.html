@@ -31,7 +31,7 @@
                 <span id="typing-text"></span>
             </div>
             <div class="hero-image">
-                <img src="logo1.png" alt="Hero Image" />
+                <img src="logo1.png" alt="Profile Illustration" />
             </div>
         </div>
     </section>
@@ -39,37 +39,36 @@
     <section id="about" class="about-section">
         <div class="about-container">
             <div class="about-image">
-                <img src=" my_logo.png" alt="Profile" />
+                <img src="my_logo.png" alt="Profile Image" />
             </div>
             <div class="about-content">
                 <h2>About Me</h2>
-                <p>Motivated software engineering graduate with strong Python and DSA skills.</p>
+                <p>
+                    I am a motivated software engineering graduate with strong skills in Python, Machine Learning, 
+                    and Data Structures & Algorithms. I enjoy building user-friendly web applications, solving 
+                    algorithmic challenges, and applying AI/ML to real-world problems. I am constantly learning 
+                    and exploring new technologies to expand my skill set.
+                </p>
+
                 <ul>
-                    <li><strong>Profile:</strong> Data Science & Analytics</li>
+                    <li><strong>Profile:</strong> Software Development & Data Science</li>
                     <li><strong>Education:</strong> Bachelor of Engineering</li>
                     <li><strong>Languages:</strong> English, Telugu</li>
-                    <li><strong>Tools:</strong> GitHub, MS Word, PowerPoint</li>
+                    <li><strong>Tools:</strong> GitHub, MS Office, VS Code</li>
                 </ul>
+
                 <div class="skills">
                     <div><span>Python</span>
-                        <div class="bar">
-                            <div style="width: 95%"></div>
-                        </div>
+                        <div class="bar"><div style="width: 95%"></div></div>
                     </div>
                     <div><span>HTML, CSS, JS</span>
-                        <div class="bar">
-                            <div style="width: 90%"></div>
-                        </div>
+                        <div class="bar"><div style="width: 90%"></div></div>
                     </div>
                     <div><span>Machine Learning</span>
-                        <div class="bar">
-                            <div style="width: 85%"></div>
-                        </div>
+                        <div class="bar"><div style="width: 85%"></div></div>
                     </div>
                     <div><span>DSA</span>
-                        <div class="bar">
-                            <div style="width: 80%"></div>
-                        </div>
+                        <div class="bar"><div style="width: 80%"></div></div>
                     </div>
                 </div>
             </div>
@@ -79,22 +78,31 @@
     <section id="projects" class="project-section">
         <h2>Projects</h2>
         <div class="project-grid">
+
             <div class="project-card">
                 <a href="https://github.com/mahankalisreeraj/AIML-Projects" target="_blank">
-                    <img src="proj_1.jpg" alt="Project 1" class="zoom-effect" />
+                    <img src="proj_1.jpg" alt="Dropout Prediction Project" class="zoom-effect" />
                     <h3>Dropout Prediction (KNN)</h3>
                 </a>
-                <p>Basin on the dropout statistics of previous years,by leveraging various data sources such as student
-                    demographics, academic performance, socio-economic backgrounds, and behavioral patterns.</p>
+                <p>
+                    Developed a machine learning model using KNN to predict student dropout risk based on 
+                    academic performance, attendance, socio-economic factors, and behavioral data. Helps 
+                    institutions take early intervention steps.
+                </p>
             </div>
+
             <div class="project-card">
                 <a href="https://github.com/mahankalisreeraj/NNFL_PROJECT" target="_blank">
-                    <img src="proj_2.jpg" alt="Project 2" class="zoom-effect" />
-                    <h3>Autism Prediction</h3>
+                    <img src="proj_2.jpg" alt="Autism Prediction Project" class="zoom-effect" />
+                    <h3>Autism Prediction (Neural Network + Optimization)</h3>
                 </a>
-                <p>Trained a Python-based neutral network with metaheuristic optimization algorithms like PSO,GA which
-                    predicts whether someone has autism or not based on the data provided with a acccuracy of 90%.</p>
+                <p>
+                    Built a Python-based neural network model enhanced with metaheuristic optimization 
+                    algorithms like PSO and GA to classify autism tendencies. Achieved an accuracy of 90% 
+                    on the dataset provided.
+                </p>
             </div>
+
         </div>
     </section>
 
@@ -103,65 +111,16 @@
         <div class="contact-grid">
             <div><strong>Address:</strong><br />Warangal, India</div>
             <div><strong>Phone:</strong><br /><a href="tel:+918074894387">+91 80748 94387</a></div>
-            <div><strong>Email:</strong><br /><a
-                    href="mailto:mahankalisreeraj363@gmail.com">mahankalisreeraj363@gmail.com</a></div>
+            <div><strong>Email:</strong><br /><a href="mailto:mahankalisreeraj363@gmail.com">mahankalisreeraj363@gmail.com</a></div>
             <div><strong>Resume:</strong><br /><a href="resume.pdf" target="_blank">Download</a></div>
         </div>
+
         <div class="social-icons">
             <a href="https://leetcode.com/u/bfQDyASDKO/" target="_blank" title="LeetCode">
                 <img src="leetcode.png" width="30" alt="LeetCode Icon">
             </a>
-
             <a href="https://www.linkedin.com/in/sreeraj-mahanakali" target="_blank" title="LinkedIn">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30"
-                    alt="LinkedIn Icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30" alt="LinkedIn Icon">
             </a>
             <a href="https://github.com/mahankalisreeraj" target="_blank" title="GitHub">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"
-                    alt="GitHub Icon">
-            </a>
-        </div>
-
-    </section>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Mahankali Sreeraj. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        const texts = ["Software Developer", "Front End Developer", "Python Programmer"];
-        let count = 0;
-        let index = 0;
-        let currentText = "";
-        let letter = "";
-
-        function type() {
-            if (count === texts.length) count = 0;
-            currentText = texts[count];
-            letter = currentText.slice(0, ++index);
-
-            document.getElementById("typing-text").textContent = letter;
-            if (letter.length === currentText.length) {
-                setTimeout(() => {
-                    index = 0;
-                    count++;
-                    setTimeout(type, 500);
-                }, 1500);
-            } else {
-                setTimeout(type, 150);
-            }
-        }
-
-        window.onload = () => {
-            type();
-            document.getElementById("year").textContent = new Date().getFullYear();
-        };
-
-        function toggleMenu() {
-            document.getElementById("navbarMenu").classList.toggle("active");
-        }
-    </script>
-
-</body>
-
-</html>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width=
