@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahankali Sreeraj - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -24,19 +24,19 @@
         </nav>
     </header>
 
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section reveal">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hello! I'm <span class="highlight">Mahankali Sreeraj</span></h1>
-                <span id="typing-text"></span>
+                <span id="typing-text" class="typing"></span>
             </div>
-            <div class="hero-image">
+            <div class="hero-image floating">
                 <img src="logo1.png" alt="Profile Illustration" />
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section reveal">
         <div class="about-container">
             <div class="about-image">
                 <img src="my_logo.png" alt="Profile Image" />
@@ -44,69 +44,74 @@
             <div class="about-content">
                 <h2>About Me</h2>
                 <p>
-                    I am a motivated software engineering graduate with strong skills in Python, Machine Learning, 
-                    and Data Structures & Algorithms. I enjoy building user-friendly web applications, solving 
-                    algorithmic challenges, and applying AI/ML to real-world problems. I am constantly learning 
-                    and exploring new technologies to expand my skill set.
+                    I am a software engineering graduate passionate about Python, Machine Learning,
+                    and building efficient web applications. I enjoy solving real-world problems
+                    through code, exploring new technologies, and continuously improving my skills.
                 </p>
 
                 <ul>
                     <li><strong>Profile:</strong> Software Development & Data Science</li>
                     <li><strong>Education:</strong> Bachelor of Engineering</li>
                     <li><strong>Languages:</strong> English, Telugu</li>
-                    <li><strong>Tools:</strong> GitHub, MS Office, VS Code</li>
+                    <li><strong>Tools:</strong> GitHub, VS Code, MS Office</li>
                 </ul>
 
+                <!-- Modern Glass Skill Bars -->
                 <div class="skills">
-                    <div><span>Python</span>
-                        <div class="bar"><div style="width: 95%"></div></div>
+                    <div class="skill-box">
+                        <span>Python</span>
+                        <div class="bar"><div style="width:95%"></div></div>
                     </div>
-                    <div><span>HTML, CSS, JS</span>
-                        <div class="bar"><div style="width: 90%"></div></div>
+
+                    <div class="skill-box">
+                        <span>HTML, CSS, JS</span>
+                        <div class="bar"><div style="width:90%"></div></div>
                     </div>
-                    <div><span>Machine Learning</span>
-                        <div class="bar"><div style="width: 85%"></div></div>
+
+                    <div class="skill-box">
+                        <span>Machine Learning</span>
+                        <div class="bar"><div style="width:85%"></div></div>
                     </div>
-                    <div><span>DSA</span>
-                        <div class="bar"><div style="width: 80%"></div></div>
+
+                    <div class="skill-box">
+                        <span>DSA</span>
+                        <div class="bar"><div style="width:80%"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="project-section">
+    <section id="projects" class="project-section reveal">
         <h2>Projects</h2>
         <div class="project-grid">
 
-            <div class="project-card">
+            <div class="project-card hover-lift">
                 <a href="https://github.com/mahankalisreeraj/AIML-Projects" target="_blank">
                     <img src="proj_1.jpg" alt="Dropout Prediction Project" class="zoom-effect" />
                     <h3>Dropout Prediction (KNN)</h3>
                 </a>
                 <p>
-                    Developed a machine learning model using KNN to predict student dropout risk based on 
-                    academic performance, attendance, socio-economic factors, and behavioral data. Helps 
-                    institutions take early intervention steps.
+                    ML model using KNN to predict student dropout likelihood using academic, behavioral,
+                    and socio-economic features, helping institutions take early action.
                 </p>
             </div>
 
-            <div class="project-card">
+            <div class="project-card hover-lift">
                 <a href="https://github.com/mahankalisreeraj/NNFL_PROJECT" target="_blank">
                     <img src="proj_2.jpg" alt="Autism Prediction Project" class="zoom-effect" />
-                    <h3>Autism Prediction (Neural Network + Optimization)</h3>
+                    <h3>Autism Prediction (NN + PSO + GA)</h3>
                 </a>
                 <p>
-                    Built a Python-based neural network model enhanced with metaheuristic optimization 
-                    algorithms like PSO and GA to classify autism tendencies. Achieved an accuracy of 90% 
-                    on the dataset provided.
+                    Neural Network integrated with optimization algorithms (PSO & GA) to classify
+                    autism tendencies with 90% accuracy.
                 </p>
             </div>
 
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section reveal">
         <h2>Contact Me</h2>
         <div class="contact-grid">
             <div><strong>Address:</strong><br />Warangal, India</div>
@@ -116,11 +121,60 @@
         </div>
 
         <div class="social-icons">
-            <a href="https://leetcode.com/u/bfQDyASDKO/" target="_blank" title="LeetCode">
+            <a href="https://leetcode.com/u/bfQDyASDKO/" target="_blank">
                 <img src="leetcode.png" width="30" alt="LeetCode Icon">
             </a>
-            <a href="https://www.linkedin.com/in/sreeraj-mahanakali" target="_blank" title="LinkedIn">
+
+            <a href="https://www.linkedin.com/in/sreeraj-mahanakali" target="_blank">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30" alt="LinkedIn Icon">
             </a>
-            <a href="https://github.com/mahankalisreeraj" target="_blank" title="GitHub">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width=
+
+            <a href="https://github.com/mahankalisreeraj" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30" alt="GitHub Icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mahankali Sreeraj. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const texts = ["Software Developer", "Frontend Developer", "Python Programmer"];
+        let count = 0, index = 0;
+
+        function type() {
+            let current = texts[count];
+            let sub = current.slice(0, ++index);
+            document.getElementById("typing-text").textContent = sub;
+
+            if (sub.length === current.length) {
+                setTimeout(() => {
+                    index = 0;
+                    count = (count + 1) % texts.length;
+                    type();
+                }, 1500);
+            } else setTimeout(type, 120);
+        }
+
+        window.onload = () => {
+            type();
+            document.getElementById("year").textContent = new Date().getFullYear();
+        };
+
+        function toggleMenu() {
+            document.getElementById("navbarMenu").classList.toggle("active");
+        }
+
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll(".reveal");
+        window.addEventListener("scroll", () => {
+            reveals.forEach(el => {
+                let top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) el.classList.add("visible");
+            });
+        });
+    </script>
+
+</body>
+</html>
